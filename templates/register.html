@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="static/resources/styles/clicki.web.css?V=20120501" media="screen" />
+<link rel="stylesheet" type="text/css" href="static/resources/styles/clicki.loginandreg.css?V=20120501" media="screen" />
+<link rel="stylesheet" type="text/css" href="static/resources/styles/clicki.webkitanimation.css?V=20120501" media="screen" />
+<title>Register</title>
+<!--[if lte IE 9 ]><link rel="stylesheet" href="resources/styles/clicki.iehotfix.css?V=20120501" /><![endif]-->
+<!--[if lte IE 9]>
+<style>
+body {background:#2f7fb2 url(resources/styles/images/topbg_01.png?V=20120501) top center no-repeat;}
+html{height:100%;overflow:hidden;background:#2f7fb2 url(resources/styles/images/topbg_01.png?V=20120501) top center no-repeat;}
+</style>
+<![endif]-->
+</head>
+<body>
+
+<div class="theCenterBox" style="">
+  <style>
+.theCenterBox{width:670px; margin-top:200px;}
+</style>
+  <div class="theLoginBox" style="width:657px">
+    <div class="loginTxt">注册账号</div>
+    <form id="leftForm" action="register" method="post">
+      <div class="theLoginArea" id="loginBox">
+        <p style="position: relative;">
+          <label for="username">邮箱：</label>
+          <input placeholder="请输入您的邮箱" name="username" id="username" type="text" maxlength="255" />
+          <span>请输入您的邮箱</span> </p>
+        <p style="position: relative;">
+          <label for="passwd">密码：</label>
+          <input placeholder="请输入您的密码" name="password" id="password" type="password" maxlength="16" />
+          <span>请输入您的密码</span> </p>
+        <div class="loginSubmitBnt">
+          <div class="reg_submit">
+            <input name="userSubmit" class="theSubmitButton" value="" type="submit" />
+          </div>
+        </div>
+        {%- if error -%}<li>ERROR!:{{ error }}</li>{% endif %}
+      </div>
+  
+ 
+</div>
+</body>
+</html>

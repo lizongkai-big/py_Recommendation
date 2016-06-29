@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>movie</title>
+<style type="text/css">
+body{ font-size:24px;} 
+</style>
+</head>
+<body>
+<form action="/{{ id }}" method="post">
+Points: <input type="number" name="points" id ='points'min="1" max="5" />
+<input type="submit" />
+</form>
+
+<a href='{{ information['Poster'] }}'><img src="{{ information['Poster'] }}" width="300" height="480"  /></a>
+<li >Title:{{ information['Title']}}</li>
+<li>Director:{{ information['Director'] }}</li>
+<li>Genre:{{ information['Genre'] }}</li>
+<li>Plot:{{ information['Plot'] }}</li>
+<hr></hr>
+
+<table width="1690" border="0">
+  <tr>
+   <td width="320"><a href={{ l[0].id }}>{{ l[0].name }} </a></td>
+   <td width="640"> <a href={{ l[1].id }}>{{ l[1].name }}</a></td>
+    <td width="960"><a href={{ l[2].id }}>{{ l[2].name }}</a></td>
+    <td width="1290"><a href={{ l[3].id }}>{{ l[3].name }}</a></td>
+    <td width='1690'><a href={{ l[4].id }}>{{ l[4].name }}</a></td>
+  </tr>
+  <tr>
+    <td><a href={{ l[5].id }}>{{ l[5].name }}</a></td>
+    <td><a href={{ l[6].id }}>{{ l[6].name }}</a></td>
+    <td><a href={{ l[7].id }}>{{ l[7].name }}</a></td>
+    <td><a href={{ l[8].id }}>{{ l[8].name }}</a></td>
+    <td><a href={{ l[9].id }}>{{ l[9].name }}</a></td>
+  </tr>
+</table>
+</body>
+</html>

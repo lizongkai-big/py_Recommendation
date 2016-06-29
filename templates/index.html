@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<li align='center'>TOP10</li>
+<hr></hr>
+{% for movie in movies %}
+  <li><a href="{{ movie.id }}">{{ movie.name }}</a></li>
+  <hr></hr>
+{% endfor %}
+</body>
+</html>
